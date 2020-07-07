@@ -16,6 +16,10 @@
     line-height: 18px;
     color: #fff;
     
+    &__text-free{
+        font-family: $a-medium;
+    }
+    
     &__text-title{
         color: #00eaff;
         font-size: 20px;
