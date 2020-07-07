@@ -1,5 +1,82 @@
-.header {
-    width: 100%;
-    min-height: 50px;
-    background-color: slategrey;
+// .header {
+//     width: 100%;
+//     min-height: 50px;
+//     background-color: slategrey;
+// }
+.header{
+    background: url(../images/header-img/header-bg1.png),url(../images/header-img/header-bg2.png);
+
+    background-size: cover;
+    background-position: center;
+ 
 }
+
+.header{
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    
+    &__text-title{
+        color: #00eaff;
+        font-size: 20px;
+        line-height: 26px;
+       
+    }
+    &__text-dtn{
+    color: #f1ac2c;
+    
+    }
+    &__text-data{
+        font-size: 20px;
+        color: #f1ac2c;
+    }
+    
+}
+
+.form{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+
+    &__list{
+list-style: none;
+
+    }
+    &__list-item{
+       &:not(:last-child){
+           margin-bottom: 14px;
+           
+       }
+        input{
+           
+            min-width: 220px;
+            min-height:40px ;
+          border:0.833px solid rgb(82, 82, 82);
+           
+        }
+    }
+    &__button{
+        border: none;
+        color: #fff;
+        background-color: rgb(255, 107, 8);
+    box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
+
+    
+    width: 220px;
+    height: 40px;
+  
+    }
+}
+
+
+.Rectangle_36 {
+    background-color: rgb(255, 107, 8);
+    box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
+    position: absolute;
+    left: 50px;
+    top: 678px;
+    width: 220px;
+    height: 40px;
+    z-index: 37;
+  }
+  

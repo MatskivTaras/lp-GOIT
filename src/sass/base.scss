@@ -11,7 +11,8 @@ html {
 	outline: none;
 	list-style: none;
 	text-decoration: none;
-	text-align: center;
+	outline: none;
+	// text-align: center;
 }
 
 body {
@@ -21,8 +22,6 @@ body {
 .container {
 	width: 100%;
 	margin: 0 auto;
+	padding:0 30px ;
 }
 
-h2 {
-	background-color: teal;
-}
