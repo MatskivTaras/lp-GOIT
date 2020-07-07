@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+h2 {
+	background-color: teal;
+}
