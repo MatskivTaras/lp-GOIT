@@ -1,12 +1,9 @@
 .container{
-    width: 100%;
-    max-width: 260px;
-    margin: 0 auto;
-padding:0 30px ;
+    max-width: 1170px;
 }
 
 .start-it{
-   
+  
     position: relative;
     // background-image: url(../images/start-it-bg2.png),url(../images/start-it-bg1.png);
     @media only screen and (max-device-width: 768px){
@@ -85,6 +82,18 @@ max-width: 720px;
         min-width: 260px;
         max-width: 532px;
         min-height: 70px;
+      
+        background-image: linear-gradient(to left,transparent,transparent 50%,#323232 50%,#00c6ff);
+        background-position: 100% 0;
+        background-size: 200% 100%;
+        transition: all .25s ease-in;
+        &:hover {
+           
+            transform: scale(1.1);
+         background-position: 0 0;
+         color:#fff;
+         }
+
         @media (min-width: 768px){
             font-size: 18px;
         }
@@ -94,6 +103,8 @@ max-width: 720px;
 
 @media (min-width: 1024px){
     .box-start-abs{
+        
+        
         position: absolute;
         right: 0;
         bottom: 0;
