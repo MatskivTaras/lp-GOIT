@@ -21,7 +21,11 @@ background: url(../images/header-img/header-bg11.png),url(../images/header-img/h
 background-size: cover;
 background-position: center;
     }
-   
+    @media only screen and (min-device-width: 1024px){
+        background: url(../images/header-img/header-bg111.png),url(../images/header-img/header-bg-222.png);
+        background-size: cover;
+        background-position: center;
+            }
  
 }
 
@@ -49,7 +53,7 @@ background-position: center;
       transform: rotate(0deg);
     }
     100% {
-      /* transform: rotate(360deg); */
+     transform: rotate(360deg); 
     }
   }
 
@@ -104,7 +108,7 @@ background-position: center;
         @media (min-width:768px){
             font-size: 40px;
             padding-bottom: 27px;
-            // line-height: 50px;
+          
     }
     }
     
@@ -153,12 +157,16 @@ background-position: center;
            margin-bottom: 14px;
            
        }
-       input[name="name"]:valid,
-       input[name="email"]:valid {
+       input[name="name"]:focus:valid,
+       input[name="mail"]:valid,
+       input[name="phone"]:valid {
          outline: #4caf50 solid 3px;
+         background-color: rgba(76, 175, 79, 0.459);
+         
        }
-       input[name="name"]:invalid,
-       input[name="mail"]:invalid {
+       input[name="name"]:focus:invalid,
+       input[name="mail"]:invalid,
+       input[name="phone"]:invalid {
          outline: red solid 3px;
         background-color: rgba(255, 0, 0, 0.459);
         // opacity: 0.5;
@@ -264,7 +272,7 @@ background-position: center;
         width: 463px;
         &__title{
             text-align: left;
-            padding:35px 0 30px 30px;
+            padding:35px 0 23px 30px;
             font-size: 35px;
             line-height: 50px;
         }
