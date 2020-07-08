@@ -3,6 +3,7 @@
 //     min-height: 50px;
 //     background-color: slategrey;
 // }
+
 .header{
     background: url(../images/header-img/header-bg1.png),url(../images/header-img/header-bg2.png);
 
@@ -10,40 +11,125 @@
     background-position: center;
  
 }
+.img{
+    
+    transition: color 200ms linear;
+    animation: logo-appear 1s linear;
+    transition: 1s;
+    transform: rotate(-360deg);
+    
+}
+.img:hover{
+    transform: scale(1.2);
+}
+@keyframes logo-appear {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    100% {
+      /* transform: rotate(360deg); */
+    }
+  }
 
 .header{
+    .img{
+        margin: 24px 0 24px 0;
+    }
     font-size: 14px;
     line-height: 18px;
     color: #fff;
-    
+    font-family: $a-extra-bold;
+    @media (min-width:768px){
+        font-size: 18px;
+        line-height: 26px;
+}
     &__text-free{
-        font-family: $a-medium;
+       font-family:  $a-regular;
+       padding-bottom: 15px;
+       @media (min-width:768px){
+           padding-bottom: 30px;
+       }
     }
     
     &__text-title{
         color: #00eaff;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 26px;
+      padding-bottom: 15px;
+      @media (min-width:768px){
+            font-size: 40px;
+            line-height: 50px;
+            padding-bottom: 30px;
+    }
        
+    }
+    &__text-information{
+        font-family: $a-medium;
+        padding-bottom: 15px;
+        @media (min-width:768px){
+            padding-bottom: 30px;
+        }
     }
     &__text-dtn{
     color: #f1ac2c;
-    
+    padding-bottom: 15px;
+   
     }
     &__text-data{
         font-size: 20px;
         color: #f1ac2c;
+        padding-bottom: 15px;
+        @media (min-width:768px){
+            font-size: 40px;
+            padding-bottom: 27px;
+            // line-height: 50px;
+    }
     }
     
 }
 
 .form{
+    
     background-color: #fff;
     color: black;
-    text-align: center;
+  padding-bottom: 26px;
+
+    &__title{
+        font-family: $a-extra-bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        padding:0 19px 10px;
+        @media (min-width:768px){
+            text-align: center;
+            font-size: 24px;
+            line-height: 28px;
+            padding: 0 110px 25px;
+        }
+       
+    }
+    &__text{
+        font-family: $a-light;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: left;
+        padding:0 19px 10px;
+        @media (min-width:768px){
+            text-align: center;
+            padding-bottom: 25px;
+        }
+    }
 
     &__list{
-list-style: none;
+        list-style: none;
+        text-align: center;
+        margin-bottom: 20px;
 
     }
     &__list-item{
@@ -51,36 +137,153 @@ list-style: none;
            margin-bottom: 14px;
            
        }
+       input[name="name"]:valid,
+       input[name="email"]:valid {
+         outline: #4caf50 solid 3px;
+       }
+       input[name="name"]:invalid,
+       input[name="mail"]:invalid {
+         outline: red solid 3px
+       }
         input{
-           
+            display: block;
+            width: 85%;
+            margin: 0 auto;
+           font-family: $a-medium;
             min-width: 220px;
+            max-width: 468px;
             min-height:40px ;
           border:0.833px solid rgb(82, 82, 82);
-           
+          padding-left: 12px;
+         
+       
         }
     }
     &__button{
+        display: block;
+        width: 85%;
+       margin: 0 auto;
         border: none;
         color: #fff;
         background-color: rgb(255, 107, 8);
     box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
-
+    min-width: 220px;
+    max-width: 468px;
+    min-height: 40px;
     
-    width: 220px;
-    height: 40px;
-  
+    // color:#00c6ff;
+    // padding: 15px 20px;
+    text-transform: uppercase;
+    // width:350px;
+    // text-decoration:none;
+    // text-align:center;
+    // margin:30px 0;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#323232 50%,#00c6ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    // font: 400 18px tahoma;
+    // border: 1px solid #00C6FF;
+   
+   &:hover,:active {
+       transform: scale(1.1);
+    background-position: 0 0;
+    color:#fff;
+    }
+    }
+    &__polit-confid{
+        font-size: 13px;
+        font-family: $m-bold;
+        color: rgb(93, 96, 102);
+        text-align: center;
+        padding: 12px 0 25px;
     }
 }
 
 
-.Rectangle_36 {
-    background-color: rgb(255, 107, 8);
-    box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
-    position: absolute;
-    left: 50px;
-    top: 678px;
-    width: 220px;
-    height: 40px;
-    z-index: 37;
-  }
-  
+// MIN-WIDTH 1024px
+
+@media (min-width:1024px){
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding:0 30px ;
+    }
+
+
+   
+      
+    .header{
+        letter-spacing: -1px;
+        
+        &__text-free{
+            padding: 0 120px 40px 0;
+            
+        }
+        &__text-title{
+            font-size: 56px;
+            line-height: 70px;
+            padding:0 10px 40px 0;
+        }
+        &__text-information{
+            font-size: 30px;
+            line-height: 47px;
+        }
+        &__text-dtn{
+            font-size: 30px;
+            line-height: 35px;
+            padding-bottom: 20px;
+        }
+        &__text-data{
+          font-size: 47px;
+          line-height: 56px;
+        }
+    }
+    .wraper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form{
+        letter-spacing: -1px;
+        width: 463px;
+        &__title{
+            text-align: left;
+            padding:35px 0 30px 30px;
+            font-size: 35px;
+            line-height: 50px;
+        }
+        &__text{
+            font-size: 18px;
+            text-align: left;
+            line-height: 28px;
+            padding: 0px 0 28px 34px;
+        }
+        &__list{
+            margin-bottom: 38px;
+        }
+        &__list-item{
+            &:not(:last-child){
+                margin-bottom: 38px;
+            }
+        }
+        input{
+            min-height: 60px;
+        }
+        &__button{
+            min-height: 60px;
+        }
+    }
+}
+
+// @media (min-width:768px){
+//     .container {
+//         width: 100%;
+//         // max-width: 620px;
+//         margin: 0 auto;
+//         padding:0 30px ;
+//     }
+// }
+

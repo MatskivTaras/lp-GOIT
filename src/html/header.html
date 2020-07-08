@@ -1,25 +1,26 @@
-<header class="header container">
+<header class="header ">
     
-   <a class="page-linc" href="#">
-       <img src="/images/header-img/Logotup.png" alt="Logo" width="100" height="30">
+   <a class="page-linc container" href="#">
+       <img class="img" src="/images/header-img/Logotup.png" alt="Logo" width="100" height="30">
    </a>
-<div class="wraper">
-    
+<div class="wraper container">
+    <div class="box ">
         <p class="header__text-free">Безплатная презентация для тех, кто хочет сменит профессию и начать карьеру в ІТ-сфере</h3>
         <h3 class="header__text-title">Узнай за 1 час каким может бить твой путь в ІТ</h2>
-        <h3 class="header__text-information">Как с нуля всего за 3-5 месяцев получить все необходимые знания и навыки для уверенного старта карьеры в IT.</h3>
+        <p class="header__text-information">Как с нуля всего за 3-5 месяцев получить все необходимые знания и навыки для уверенного старта карьеры в IT.</h3>
         <p class="header__text-dtn">Ближайшая встреча</h3>
         <h3 class="header__text-data">Киев, 16 декабря 19:00</h3>
-
-        <form class="form" action="#" method="GET">
+    </div>
+    <div class="form-box ">
+        <form class="form " action="#" method="GET">
             <h3 class="form__title">Оставьте заявку на участие в бесплатной презентации</h3>
             <p class="form__text">С вами свяжется карьерный консультант и ответит на вопросы.</p>
             <ul class="form__list">
             <li class="form__list-item">
-                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="name" required placeholder="Имя">
             </li>
             <li class="form__list-item">
-                <input type="email" name="mail" placeholder="Email">
+                <input type="email" name="mail" required placeholder="Email">
             </li>
             <li class="form__list-item">
                 <input type="tel" name="phone" placeholder="Телефон">
@@ -29,9 +30,12 @@
             
             
             <button class="form__button" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+            
         </form>
+        <p class="form__polit-confid">Политика конфиденциальности</p>
     </div>
-  
+    </div>
+   
    
 
 </header>
