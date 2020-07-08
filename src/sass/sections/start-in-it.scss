@@ -53,6 +53,7 @@ padding:0 30px ;
         @media (min-width: 768px){
             max-width: 377px;
         }
+       
     }
     &__title{
         font-size: 20px;
@@ -63,6 +64,11 @@ padding:0 30px ;
         @media (min-width: 768px){
             font-size: 40px;
             line-height: 50px;
+            
+    padding-right: 63px;
+    @media (min-width: 1024px){
+max-width: 720px;
+    }
         }
     }
 
@@ -79,16 +85,26 @@ padding:0 30px ;
         min-width: 260px;
         max-width: 532px;
         min-height: 70px;
+        @media (min-width: 768px){
+            font-size: 18px;
+        }
           
     }
 }
 
+@media (min-width: 1024px){
+    .box-start-abs{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
 
 .box-start-it{
     position: relative;
 }
 
-.box-start-it::before{
+.start-it__text2::before{
    
     
         content: "";
@@ -101,3 +117,4 @@ padding:0 30px ;
         background-color:#00eaff;
     
 }
+
