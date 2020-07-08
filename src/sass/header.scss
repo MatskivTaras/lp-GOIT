@@ -125,12 +125,15 @@ background-position: center;
         font-size: 16px;
         line-height: 20px;
         text-align: left;
-        padding:0 19px 10px;
+        padding:20px 19px 10px;
+        @media (min-width:450px){
+            text-align: center;
+        }
         @media (min-width:768px){
             text-align: center;
             font-size: 24px;
             line-height: 28px;
-            padding: 0 110px 25px;
+            padding: 30px 150px 25px;
         }
        
     }
@@ -140,6 +143,9 @@ background-position: center;
         line-height: 18px;
         text-align: left;
         padding:0 19px 10px;
+        @media (min-width:450px){
+            text-align: center;
+        }
         @media (min-width:768px){
             text-align: center;
             padding-bottom: 25px;
@@ -158,15 +164,15 @@ background-position: center;
            
        }
        input[name="name"]:focus:valid,
-       input[name="mail"]:valid,
-       input[name="phone"]:valid {
+       input[name="mail"]:focus:valid,
+       input[name="phone"]:focus:valid {
          outline: #4caf50 solid 3px;
          background-color: rgba(76, 175, 79, 0.459);
          
        }
        input[name="name"]:focus:invalid,
-       input[name="mail"]:invalid,
-       input[name="phone"]:invalid {
+       input[name="mail"]:focus:invalid,
+       input[name="phone"]:focus:invalid {
          outline: red solid 3px;
         background-color: rgba(255, 0, 0, 0.459);
         // opacity: 0.5;
