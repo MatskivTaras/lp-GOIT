@@ -57,7 +57,52 @@ background-position: center;
     }
   }
 
+  @keyframes title-appear {
+    0% {
+      transform: translateX(-600px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100% {
+    //  transform: rotate(360deg); 
+   
+    }
+  }
+
+  @keyframes text-free-appear {
+    0% {
+      transform: translate(600px, -600px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    75%{
+        transform: skew(230 230);  
+        transform: scale(0.5); 
+    }
+    100% {
+    //  transform: rotate(360deg); 
+    
+    }
+  }
+
 .header{
+    &__container{
+        @media (min-width:768px) and (max-width:1024px){
+            max-width: 620px;
+            margin: 0 auto;
+        }
+    }
     .img{
         margin: 24px 0 24px 0;
     }
@@ -70,6 +115,7 @@ background-position: center;
         line-height: 26px;
 }
     &__text-free{
+        animation: text-free-appear 1s linear;
        font-family:  $a-regular;
        padding-bottom: 15px;
        @media (min-width:768px){
@@ -78,6 +124,7 @@ background-position: center;
     }
     
     &__text-title{
+        animation: title-appear 1s linear;
         color: #00eaff;
         font-size: 19px;
         line-height: 26px;
@@ -133,7 +180,7 @@ background-position: center;
             text-align: center;
             font-size: 24px;
             line-height: 28px;
-            padding: 30px 150px 25px;
+            padding:30px 50px;
         }
        
     }
@@ -166,17 +213,20 @@ background-position: center;
        input[name="name"]:focus:valid,
        input[name="mail"]:focus:valid,
        input[name="phone"]:focus:valid {
-         outline: #4caf50 solid 3px;
-         background-color: rgba(76, 175, 79, 0.459);
+        //  outline: #4caf50 solid 3px;
+         box-shadow: 0px 2px 10px 0px #00eaff;
+        //  background-color: rgba(76, 175, 79, 0.459);
          
        }
        input[name="name"]:focus:invalid,
        input[name="mail"]:focus:invalid,
        input[name="phone"]:focus:invalid {
-         outline: red solid 3px;
-        background-color: rgba(255, 0, 0, 0.459);
-        // opacity: 0.5;
+           
+        //  outline: red solid 3px;
+        // background-color: #00eaff;
+        box-shadow: 0px 2px 10px 0px #ff3c00af;
        }
+       
         input{
             display: block;
             width: 85%;
@@ -232,18 +282,16 @@ background-position: center;
 // MIN-WIDTH 1024px
 
 @media (min-width:1024px){
-    .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding:0 30px ;
-    }
+   
 
 
    
       
     .header{
         letter-spacing: -1px;
+        .img{
+        margin: 30px 0 60px 0;
+        }
         
         &__text-free{
             padding: 0 120px 40px 0;
@@ -257,6 +305,7 @@ background-position: center;
         &__text-information{
             font-size: 30px;
             line-height: 47px;
+            padding-right: 60px;
         }
         &__text-dtn{
             font-size: 30px;
@@ -307,146 +356,3 @@ background-position: center;
 
 
 
-// header .container {
-//     width: 100%;
-//     max-width: 1400px;
-//     margin: 0 auto;
-//     display: -webkit-flex;
-//     display: -moz-flex;
-//     display: -ms-flex;
-//     display: -o-flex;
-//     display: flex;
-//     -ms-align-items: center;
-//     align-items: center;
-//     justify-content: space-between;
-//     padding: 0 15px;
-//   }
-//   header.active .phone_btn {
-//     transform: rotate(-45deg);
-//   }
-//   header.active .phone_btn span:nth-child(3) {
-//     width: 0;
-//   }
-//   header.active .phone_btn span:nth-child(2) {
-//     margin: 0 auto;
-//     transform: rotate(90deg);
-//     top: -1px;
-//   }
-//   header .phone_btn {
-//     width: 40px;
-//     cursor: pointer;
-//     display: none;
-//     transform-origin: center;
-//     transition: 0.4s;
-//   }
-//   header .phone_btn span {
-//     width: 100%;
-//     height: 2px;
-//     display: block;
-//     position: relative;
-//     transition: 0.4s;
-//     background: #fff;
-//   }
-//   header .phone_btn span:nth-child(2) {
-//     margin: 10px 0;
-//   }
-  
-//   @media (max-width: 992px) {
-//     header {
-//       background: #000;
-//     }
-//     header .phone_btn {
-//       display: block;
-//     }
-//     header nav {
-//       position: fixed;
-//       overflow: auto;
-//       right: -101%;
-//       border-top: 1px solid silver;
-//       top: 70px;
-//       transition: 0.4s;
-//       width: 100%;
-//       max-width: 350px;
-//       z-index: 5;
-//       background: #000;
-//       display: flex;
-//       -webkit-flex-direction: column;
-//       -moz-flex-direction: column;
-//       -ms-flex-direction: column;
-//       -o-flex-direction: column;
-//       flex-direction: column;
-//       height: calc(100% - 70px);
-//       padding: 15px;
-//     }
-//     header nav a {
-//       margin-bottom: 10px;
-//     }
-//     header.active nav {
-//       right: 0;
-//     }
-//   }
-  
-//   .line {
-//     width: 100%;
-//     max-width: 1000px;
-//     margin: auto;
-//     display: -webkit-flex;
-//     display: -moz-flex;
-//     display: -ms-flex;
-//     display: -o-flex;
-//     display: flex;
-//     -ms-align-items: center;
-//     align-items: center;
-//     justify-content: center;
-//     -webkit-flex-wrap: wrap;
-//     -moz-flex-wrap: wrap;
-//     -ms-flex-wrap: wrap;
-//     -o-flex-wrap: wrap;
-//     flex-wrap: wrap;
-//   }
-//   .line .col {
-//     height: 100px;
-//     width: 30%;
-//     min-width: 200px;
-//     background: #000;
-//     margin: 2px;
-//   }
-  
-//   @media (max-width: 992px) {
-//     .line .col {
-//       width: 100%;
-//       background: red;
-//     }
-//     .line {
-//       display: block;
-//     }
-//   }
-//   @media (max-width: 850px) {
-//     .line .col:nth-child(2) {
-//       width: 100%;
-//       background: blue;
-//     }
-//   }
-//   @media (max-width: 800px) {
-//     .line .col:nth-child(2) {
-//       background: blue;
-//       width: 50%;
-//       margin: 5px auto;
-//     }
-//   }
-//   @media (max-width: 320px) {
-//     .line .col:nth-child(2) {
-//       width: 100%;
-//       background: gold;
-//       margin: 5px auto;
-//     }
-//   }
-
-// @media (min-width:768px){
-//     .container {
-//         width: 100%;
-//         // max-width: 620px;
-//         margin: 0 auto;
-//         padding:0 30px ;
-//     }
-// }
