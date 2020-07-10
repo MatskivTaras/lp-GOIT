@@ -1,17 +1,12 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	outline: none;
 	list-style: none;
 	text-decoration: none;
-	// text-align: center;
 }
 
 body {
@@ -40,5 +35,29 @@ body {
 @media (min-width: 960px) {
 	.container {
 		padding: 0 15px;
+	}
+}
+
+.section-title {
+	line-height: 1.5;
+	font-family: $a-extra-bold;	
+	color: $st-color;
+}
+
+@media (min-width: 320px)and(max-width: 767px) {
+	.section-title {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 768px)and(max-width: 959px) {
+	.section-title {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 960px) {
+	.section-title {
+		font-size: 48px;
 	}
 }
