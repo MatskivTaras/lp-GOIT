@@ -2,22 +2,25 @@
     padding: 35px 0;
 }
 
-.a-us-title {
-    padding-bottom: 45px;
-    width: 180px;
-    color: #222222;
-
-    &__text {
-        line-height: 1.5;
-        font-family: $a-extra-bold;
-        font-size: 20px;
-    }
+.about-us-title {
+    padding-right: 30%;
 }
 
-.a-us-sub-title {
+.awards-wrp {
+    margin-top: 35px;
+}
+
+.tender-wrp {
+    margin-top: 35px;
+}
+
+.partners-wrp  {
+    margin-top: 35px;
+} 
+
+.about-us-sub-title {
     display: inline-block;
     background-color: #edf0f2;
-    text-align: left;
     font-family: $a-extra-bold;
     font-size: 16px;
     color: #222222;
@@ -30,101 +33,5 @@
     
     &__item {
         margin: 0 auto 20px;
-    }
-
-    &__item--epam {
-        width: 59px;
-        height: 21px;
-        background: url("../images/about-us/partners/epam.png") no-repeat center;
-    }
-
-    &__item--nagel {
-        width: 72px;
-        height: 38px;
-        background: url("../images/about-us/partners/nagel.png") no-repeat center;
-    }
-
-    &__item--crytek {
-        width: 80px;
-        height: 27px;
-        background: url("../images/about-us/partners/crytek.png") no-repeat center;
-    }
-
-    &__item--ciklum {
-        width: 138px;
-        height: 29px;
-        background: url("../images/about-us/partners/ciklum.png") no-repeat center;
-    }
-
-    &__item--inovecs {
-        width: 92px;
-        height: 16px;
-        background: url("../images/about-us/partners/inovecs.png") no-repeat center;
-    }
-
-    &__item--softserve {
-        width: 117px;
-        height: 17px;
-        background: url("../images/about-us/partners/softserve.png") no-repeat center;
-    }
-
-    &__item--globallogic {
-        width: 111px;
-        height: 20px;
-        background: url("../images/about-us/partners/globallogic.png") no-repeat center;
-    }
-
-    &__item--alfabank {
-        width: 109px;
-        height: 29px;
-        background: url("../images/about-us/partners/alfabank.png") no-repeat center;
-    }
-
-    &__item--goiteens {
-        width: 86px;
-        height: 23px;
-        background: url("../images/about-us/partners/goiteens.png") no-repeat center;
-    }
-
-    &__item--infopulse {
-        width: 76px;
-        height: 19px;
-        background: url("../images/about-us/partners/infopulse.png") no-repeat center;
-    }
-
-    &__item--ubisoft {
-        width: 46px;
-        height: 34px;
-        background: url("../images/about-us/partners/ubisoft.png") no-repeat center;
-    }
-
-    &__item--luxoft {
-        width: 72px;
-        height: 38px;
-        background: url("../images/about-us/partners/luxoft.png") no-repeat center;
-    }
-
-    &__item--lenar {
-        width: 77px;
-        height: 19px;
-        background: url("../images/about-us/partners/lenar.png") no-repeat center;
-    }
-
-    &__item--terrasoft {
-        width: 81px;
-        height: 16px;
-        background: url("../images/about-us/partners/terrasoft.png") no-repeat center;
-    }
-
-    &__item--grossum {
-        width: 88px;
-        height: 25px;
-        background: url("../images/about-us/partners/grossum.png") no-repeat center;
-    }
-
-    &__item--templatemonster {
-        width: 134px;
-        height: 22px;
-        background: url("../images/about-us/partners/templatemonster.png") no-repeat center;
     }
 }
