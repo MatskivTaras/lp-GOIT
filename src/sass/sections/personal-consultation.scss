@@ -4,10 +4,7 @@
 }
 
 .pc-title {
-    font-family: $a-extra-bold;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #222222;
+    text-align: center;
 }
 
 .steps {
@@ -67,8 +64,9 @@
 }
 
 .see-materials {
+    display: block;
     max-width: 225px;
-    margin-top: 45px;
+    margin: 45px auto 0;
     padding: 25px 20px;    
     border: none;
     background-color: rgb(255, 112, 42);
@@ -88,7 +86,6 @@
     .pc-title {
         max-width: 80%;
         margin: 0 auto;
-        font-size: 30px;
     }    
 
     .steps__item::before {
@@ -114,7 +111,6 @@
 @media (min-width: 960px) {
     .pc-title {
         max-width: 100%;
-        font-size: 48px;
     }   
 
     .steps__item {
