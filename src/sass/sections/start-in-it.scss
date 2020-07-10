@@ -106,25 +106,53 @@
 }
 
 @media (min-width: 1024px){
-    .box-start-abs{
-        
-        
-        position: absolute;
-        right: 0;
-        bottom: 0;
+    .box-start-it{
+        position: relative;
+        max-width: 1250px;
+      
     }
+    .start-it{
+    &__text1{
+      
+        font-size: 30px;
+        line-height: 1.2;
+        padding-right: 300px;
+    }
+    &__text2{
+        position: absolute;
+        // right: 0;
+        left: 832px;
+        line-height: 1.95;
+        max-width: 411px;
+        // padding-right: 41px;
+    }
+    &__title{
+        font-size: 48px;
+        line-height: 1.2;
+        padding-right: 0;
+        padding-bottom: 56px;
+    }
+    &__btn{
+        max-width: 680px;
+        min-height: 110px;
+        font-size: 30px;
+    }
+} 
 }
 
-.box-start-it{
-    position: relative;
-}
+
+  
+// .box-start-it{
+//     position: relative;
+// }
 
 .start-it__text2::before{
    
     
         content: "";
         display: block;
-        position: absolute;
+        
+        position: relative;
         width: 62px;
         height: 2px;
         left: 0;
