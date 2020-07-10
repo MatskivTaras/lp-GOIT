@@ -188,15 +188,16 @@ background-position: center;
      transform: scale(1.2);
        }
        @media (min-width:768px){
-           padding-bottom: 30px;
+         font-size: 16px;
+           padding-bottom: 24px;
        }
     }
     
     &__text-title{
         animation: title-appear 1s linear 0.5s;
         color: #00eaff;
-        font-size: 19px;
-        line-height: 26px;
+        // font-size: 19px;
+        // line-height: 26px;
       padding-bottom: 15px;
       transition: .2s transform linear;
       &:hover{
@@ -205,7 +206,7 @@ background-position: center;
       @media (min-width:768px){
             font-size: 40px;
             line-height: 50px;
-            padding-bottom: 30px;
+            padding-bottom: 11px;
     }
        
     }
@@ -392,24 +393,28 @@ background-position: center;
    
       
     .header{
+      &__container{
+        max-width: 1220px;
+        margin: 0 auto;
+      }
         letter-spacing: -1px;
         .img{
         margin: 30px 0 60px 0;
         }
         
         &__text-free{
-            padding: 0 120px 40px 0;
+            padding: 0 120px 16px 0;
             
         }
         &__text-title{
             font-size: 56px;
             line-height: 70px;
-            padding:0 10px 40px 0;
+            padding:0px 10px 0 0;
         }
         &__text-information{
             font-size: 30px;
             line-height: 47px;
-            padding-right: 60px;
+            padding-right: 157px;
         }
         &__text-dtn{
             font-size: 30px;
