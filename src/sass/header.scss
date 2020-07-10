@@ -1,14 +1,3 @@
-// .header {
-//     width: 100%;
-//     min-height: 50px;
-//     background-color: slategrey;
-// }
-
-
-
-
-
-
 
 .header{
     @media only screen and (max-device-width: 768px){
@@ -35,13 +24,16 @@ background-position: center;
     
     transition: color 200ms linear;
     animation: logo-appear 1s linear;
-    transition: 1s;
+    transition: 0.5s;
     transform: rotate(-360deg);
     
 }
 .img:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
+
+// АНІМАЦІЯ ЛОГО
+
 @keyframes logo-appear {
     0% {
       transform: translateY(-200px);
@@ -57,24 +49,7 @@ background-position: center;
     }
   }
 
-  @keyframes title-appear {
-    0% {
-      transform: translateX(-600px);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(0px);
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    75%{
-        transform: scale(0.5);
-    }
-    100% {
-    //  transform: rotate(360deg); 
-   
-    }
-  }
+// АНІМАЦІЯ TEXT-FREE
 
   @keyframes text-free-appear {
     0% {
@@ -93,6 +68,96 @@ background-position: center;
     100% {
     //  transform: rotate(360deg); 
     
+    }
+  }
+
+//   АНІМАЦІЯ TITLE
+
+  @keyframes title-appear {
+    0% {
+      transform: translate(-600px,-600px);
+       
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100% {
+    //  transform: rotate(360deg); 
+   
+    }
+  }
+
+//  АНІМАЦІЯ TEXT-INFORMATION 
+
+  @keyframes text-information-appear {
+    0% {
+      transform: translate(600px,-600px);
+       
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100% {
+    //  transform: rotate(360deg); 
+   
+    }
+  }
+
+// АНІМАЦІЯ text-dtn
+
+  @keyframes text-dtn-appear {
+    0% {
+      transform: translate(600px);
+       
+      opacity: 0;
+    }
+    50% {
+        
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100% {
+    //  transform: rotate(360deg); 
+   
+    }
+  }
+
+//   АНІМАЦІЯ text-data
+
+  @keyframes text-data-appear {
+    0% {
+      transform: translate(-600px);
+       
+      opacity: 0;
+    }
+    50% {
+        
+      transform: translateY(0px);
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100% {
+    //  transform: rotate(360deg); 
+   
     }
   }
 
@@ -115,20 +180,28 @@ background-position: center;
         line-height: 26px;
 }
     &__text-free{
-        animation: text-free-appear 1s linear;
+        animation: text-free-appear 1s linear 0.3s ;
        font-family:  $a-regular;
        padding-bottom: 15px;
+       transition: .2s transform linear;
+       &:hover{
+     transform: scale(1.2);
+       }
        @media (min-width:768px){
            padding-bottom: 30px;
        }
     }
     
     &__text-title{
-        animation: title-appear 1s linear;
+        animation: title-appear 1s linear 0.5s;
         color: #00eaff;
         font-size: 19px;
         line-height: 26px;
       padding-bottom: 15px;
+      transition: .2s transform linear;
+      &:hover{
+        transform: scale(1.1);
+          }
       @media (min-width:768px){
             font-size: 40px;
             line-height: 50px;
@@ -137,6 +210,15 @@ background-position: center;
        
     }
     &__text-information{
+        transition: color 200ms linear;
+        animation: text-information-appear 1s linear 1s;
+        transition: 1s;
+        // transform: rotate(-360deg);
+        transition: .2s transform linear;
+      &:hover{
+        transform: scale(1.1);
+          }
+        
         font-family: $a-medium;
         padding-bottom: 15px;
         @media (min-width:768px){
@@ -146,12 +228,30 @@ background-position: center;
     &__text-dtn{
     color: #f1ac2c;
     padding-bottom: 15px;
-   
+    transition: color 200ms linear;
+    animation: text-dtn-appear 1s linear 1.5s;
+    transition: 1s;
+    // transform: rotate(-360deg);
+    transition: .2s transform linear;
+      &:hover{
+        transform: scale(1.2);
+          }
     }
     &__text-data{
         font-size: 20px;
         color: #f1ac2c;
         padding-bottom: 15px;
+        // transition: color 200ms linear;
+        animation: text-data-appear 1s linear 2s;
+        transition: .2s transform linear;
+      &:hover{
+        transform: scale(1.1);
+          }
+      
+        
+       
+        
+        
         @media (min-width:768px){
             font-size: 40px;
             padding-bottom: 27px;
@@ -165,8 +265,11 @@ background-position: center;
     
     background-color: #fff;
     color: black;
-  padding-bottom: 26px;
-
+    padding-bottom: 26px;
+    transition: .2s box-shadow linear;
+    &:hover{
+        box-shadow: inset 0px 0px 26px 0px #00eaff, 0px 2px 20px 0px #00eaff; ;
+    }
     &__title{
         font-family: $a-extra-bold;
         font-size: 16px;
@@ -210,6 +313,10 @@ background-position: center;
            margin-bottom: 14px;
            
        }
+      
+       input:hover{
+         transform: scale(1.1);
+       }
        input[name="name"]:focus:valid,
        input[name="mail"]:focus:valid,
        input[name="phone"]:focus:valid {
@@ -222,8 +329,7 @@ background-position: center;
        input[name="mail"]:focus:invalid,
        input[name="phone"]:focus:invalid {
            
-        //  outline: red solid 3px;
-        // background-color: #00eaff;
+      
         box-shadow: 0px 2px 10px 0px #ff3c00af;
        }
        
@@ -237,7 +343,7 @@ background-position: center;
             min-height:40px ;
           border:0.833px solid rgb(82, 82, 82);
           padding-left: 12px;
-         
+          transition: .2s transform linear;
        
         }
     }
@@ -255,8 +361,6 @@ background-position: center;
     
   
     text-transform: uppercase;
-   
-    display: block;
     background-image: linear-gradient(to left,transparent,transparent 50%,#323232 50%,#00c6ff);
     background-position: 100% 0;
     background-size: 200% 100%;
@@ -266,7 +370,7 @@ background-position: center;
    &:hover,:active {
        transform: scale(1.1);
     background-position: 0 0;
-    color:#fff;
+    
     }
     }
     &__polit-confid{
