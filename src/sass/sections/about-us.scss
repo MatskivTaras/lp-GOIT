@@ -15,23 +15,12 @@
 }
 
 .a-us-sub-title {
+    display: inline-block;
     background-color: #edf0f2;
     text-align: left;
     font-family: $a-extra-bold;
     font-size: 16px;
     color: #222222;
-    
-    &--awards {
-        max-width: 96px;
-    }
-
-    &--tender {
-        max-width: 101px;
-    }
-
-    &--partners {
-        max-width: 105px;
-    }
 }
 
 .partners {
