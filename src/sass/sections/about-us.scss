@@ -127,12 +127,11 @@
 
 .partners {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     
     &__item {
-        margin: 15px auto 20px;
+        margin: 10px 7px;
     }
 }
 
