@@ -2,8 +2,13 @@
     padding: 35px 0;
 }
 
-.about-us-title {
-    padding-right: 30%;
+.br-text-mobile,
+.br-text-tablet-plus {
+    display: none;
+}
+
+.indent-left {
+    margin-left: 6.5%;
 }
 
 .about-us-sub-title {
@@ -36,7 +41,7 @@
         position: relative;
         width: 225px;
         min-height: 470px;
-        margin: 65px 10px 0px 10px;
+        margin: 30px 10px 0px 10px;
         padding: 40px 30px;
         background-color: white;
         box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16),
@@ -52,6 +57,10 @@
             font-family: $m-bold;
             font-size: 70px;
             color: #edf0f2; 
+        }
+
+        &:not(:nth-child(1)) {
+            margin-top: 65px;
         }
     }
 
@@ -88,7 +97,7 @@
 .tender-wrp {
     position: relative;
     max-width: 320px;
-    margin-top: 60px;
+    margin: 60px 0 0 6.5%;
 }
 
 .tender__title {
@@ -127,10 +136,33 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
+    .br-text-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 550px) {
     .awards {
-        display: flex;
         justify-content: space-around;
+
+        &__item:not(:last-child) {
+            margin-top: 30px !important;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .br-text-mobile {
+        display: none;
+    }
+
+    .br-text-tablet-plus {
+        display: block;
+    }
+
+    .awards__item {
+        margin-top: 30px !important;
     }
 
     .blocks-wrp {
@@ -149,6 +181,10 @@
 }
 
 @media (min-width: 960px) {
+    .indent-left {
+        margin-left: 0;
+    }
+
     .desktop-flex-wrp {
         display: flex;
         flex-direction: column-reverse;
@@ -160,22 +196,31 @@
     }
 
     .tender-wrp {
-        margin-top: 0;
+        margin: 0;
         min-width: 40%;
     }
 
     .partners-wrp {
-        margin: 10px 0 0 5%;
+        margin: 20px 0 0 5%;
+    }
+
+    .partners__item:hover .partners__img {
+        transform: scale(1.1);
+        // box-shadow: 0px 15px 32px 0px rgba(13, 36, 62, 0.16),
     }
 
     .tender__img {
         left: 258px;
     }
 
+    .awards {
+        justify-content: center;
+    }
+
     .awards__item {
-        width: 360px;
+        width: 374px;
         min-height: 275px;
-        margin-top: 30px;
+        margin: 30px 0 0 0;
         padding: 0;
         box-shadow: none;
 
@@ -183,12 +228,10 @@
             transform: rotate(-90deg);
             font-size: 30px;
         }
-
-
     }
 
     .awards__title {
-        max-width: 60%;
+        max-width: 40%;
     }
     
     .awards__text {
@@ -200,10 +243,20 @@
     }
 
     .awards__img {
-        top: 0;
-        right: 0;
-        bottom: auto;
+        top: auto;
+        right: 5px;
+        bottom: 40%;
         left: auto;
         transform: none;
+    }
+
+    .awards__item:not(:last-child) .awards__img {
+        right: 50px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .awards {
+        justify-content: space-between;
     }
 }
