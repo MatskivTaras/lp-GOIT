@@ -186,6 +186,7 @@ background-position: center;
        transition: .2s transform linear;
        &:hover{
      transform: scale(1.05);
+    
        }
        @media (min-width:768px){
          font-size: 16px;
@@ -218,6 +219,7 @@ background-position: center;
         transition: .2s transform linear;
       &:hover{
         transform: scale(1.05);
+       
           }
         
         font-family: $a-medium;
@@ -236,6 +238,7 @@ background-position: center;
     transition: .2s transform linear;
       &:hover{
         transform: scale(1.05);
+       
           }
     }
     &__text-data{
@@ -247,6 +250,7 @@ background-position: center;
         transition: .2s transform linear;
       &:hover{
         transform: scale(1.05);
+      
           }
       
         
@@ -369,6 +373,7 @@ background-position: center;
    
    
    &:hover,:active {
+       box-shadow: none;
        transform: scale(1.1);
     background-position: 0 0;
     
