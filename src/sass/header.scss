@@ -384,7 +384,7 @@ background-position: center;
         font-family: $m-bold;
         color: rgb(93, 96, 102);
         text-align: center;
-        padding: 12px 0 25px;
+        padding: 13px 0 25px;
     }
 }
 
@@ -398,6 +398,7 @@ background-position: center;
    
       
     .header{
+      padding-bottom: 70px;
       &__container{
         max-width: 1220px;
         margin: 0 auto;
@@ -420,11 +421,12 @@ background-position: center;
             font-size: 30px;
             line-height: 47px;
             padding-right: 157px;
+            padding-bottom: 40px;
         }
         &__text-dtn{
             font-size: 30px;
             line-height: 35px;
-            padding-bottom: 20px;
+            padding-bottom:25px;
         }
         &__text-data{
           font-size: 47px;
@@ -437,6 +439,7 @@ background-position: center;
     }
 
     .form{
+      padding-bottom: 50px;
         letter-spacing: -1px;
         width: 463px;
         &__title{
