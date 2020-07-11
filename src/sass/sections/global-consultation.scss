@@ -1,0 +1,79 @@
+.text-style {
+    font-family: 'Acrom-Bold', sans-serif;
+    font-weight:bold ;
+}
+.consult {
+    font-family: 'Acrom-Bold', sans-serif;
+    background-color: #ffffff;
+    padding-top: 36px;
+    padding-bottom: 38px;
+
+    @media screen and(min-width:768px){
+        padding-top: 55px;
+        padding-bottom: 56px;
+    }
+    @media screen and(min-width:1024px){
+        padding-top: 138px;
+        padding-bottom: 94px;
+    }
+
+    .container{
+        @media screen and(min-width:1024px){
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    .section-title {
+        text-align: left;
+        margin-bottom: 22px;
+
+        @media screen and(min-width:768px){
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: -1px;
+            max-width: 620px;
+        }
+
+        @media screen and(min-width:1024px){
+            font-size: 36px;
+            line-height: 50px;
+            max-width: 50%;
+            margin-right: 50px;
+        }
+
+        @media screen and(min-width:1170px){
+            font-size: 48px;
+            line-height: 60px;
+        }
+    }
+}
+
+.list-consult {
+    list-style: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Acrom-Regular', sans-serif;
+    margin: 0 auto;
+
+    @media screen and(min-width:768px){
+        max-width: 620px;
+    }
+
+    @media screen and(min-width:1024px){
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 50%;
+        margin-left: 50px;
+    }
+}
+.list-consult__item {
+    background: url("../images/consalt/arrow.jpg") left 6px no-repeat;
+    background-size: 18px;
+    padding-left: 36px;
+
+    &:not(:last-child){
+        margin-bottom: 18px;
+    }
+}
+
