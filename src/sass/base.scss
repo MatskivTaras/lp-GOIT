@@ -7,16 +7,19 @@
 	outline: none;
 	list-style: none;
 	text-decoration: none;
+	outline: none;
+	// text-align: center;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif; 
 }
 
 .container {
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
+	
 }
 
 @media (min-width: 320px)and(max-width: 767px) {
