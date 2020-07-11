@@ -27,12 +27,19 @@
     .section-title {
         text-align: left;
         margin-bottom: 22px;
-
+        letter-spacing: -1.1px;
+        transition: .200s linear;
+        &:hover{
+            transform: scale(1.05);
+           
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+        }
         @media screen and(min-width:768px){
             font-size: 30px;
             line-height: 40px;
             letter-spacing: -1px;
             max-width: 620px;
+            margin-bottom: 28px;
         }
 
         @media screen and(min-width:1024px){
@@ -40,6 +47,7 @@
             line-height: 50px;
             max-width: 50%;
             margin-right: 50px;
+            padding-right: 2px;
         }
 
         @media screen and(min-width:1170px){
@@ -55,7 +63,20 @@
     line-height: 20px;
     font-family: 'Acrom-Regular', sans-serif;
     margin: 0 auto;
-
+  
+    &__br1{
+        @media(min-width: 1024px){
+            display: none;
+        }
+    }
+   &__br{
+       @media(max-width: 767px){
+           display: none;
+       }
+       @media(min-width: 1024px){
+        display: none;
+    }
+   }
     @media screen and(min-width:768px){
         max-width: 620px;
     }
@@ -65,15 +86,21 @@
         line-height: 30px;
         max-width: 50%;
         margin-left: 50px;
+    margin-top: 5px;
     }
 }
 .list-consult__item {
-    background: url("../images/consalt/arrow.jpg") left 6px no-repeat;
+    background: url("../images/global-consultation/arrow.png") left 6px no-repeat;
     background-size: 18px;
-    padding-left: 36px;
+    padding-left: 35px;
+    transition: .200s linear;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    }
 
     &:not(:last-child){
-        margin-bottom: 18px;
+        margin-bottom: 15px;
     }
 }
 
