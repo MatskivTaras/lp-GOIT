@@ -136,6 +136,18 @@
     }
 }
 
+.send-request {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: $a-extra-bold;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+}
+
 @media (min-width: 320px) {
     .br-text-mobile {
         display: block;
