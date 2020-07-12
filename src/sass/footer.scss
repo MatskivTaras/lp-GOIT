@@ -1,0 +1,95 @@
+.footer {
+    padding: 35px 0;
+    background: url("../images/footer/footer-bgd-mobile.png") no-repeat center;
+    background-size: cover;
+	@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+		& {
+            background: url("../images/footer/footer-bgd-mobile@2x.png") no-repeat center;
+            background-size: cover;
+		}
+	}
+}
+
+.send-request {
+    display: block;
+    max-width: 205px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #03aabc;
+    text-align: center;
+    font-family: $a-extra-bold;
+    font-size: 20px;
+    color: #00eaff;
+}
+
+.footer-bottom {
+    margin-top: 308px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__text {
+    padding-top: 15px;
+    font-family: $a-regular;
+    font-size: 14px;
+    color: white;
+}
+
+@media(min-width: 768px) {
+    .footer {
+        padding: 90px 65px 20px;
+        background: url("../images/footer/footer-bgd-tablet.png") no-repeat center;
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+            & {
+                background: url("../images/footer/footer-bgd-tablet@2x.png") no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+
+    .send-request {
+        max-width: 305px;
+        font-size: 30px;
+    }
+
+    .footer-bottom {
+        margin-top: 297px;
+        flex-direction: row;
+    }
+    
+    .footer__text {
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 960px) {
+    .footer {
+        padding: 260px 0 60px;
+        background: url("../images/footer/footer-bgd-desktop.png") no-repeat center;
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+            & {
+                background: url("../images/footer/footer-bgd-desktop@2x.png") no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+
+    .send-request {
+        max-width: 610px;
+        font-size: 60px;
+    }
+
+    .footer-bottom {
+        margin-top: 99%;
+        flex-direction: row;
+    }
+    
+    .footer__text {
+        padding: 20px;
+        font-size: 25px;
+    }
+}
