@@ -34,7 +34,28 @@
 }
 
 .about-list {
+    position: relative;
     padding: 0 18px;
+
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        right: -30px;
+        z-index: -1;
+        width: 272px;
+        height: 193px;
+        background: url("../images/about-it/map.png") no-repeat;
+        background-size: contain;
+        content: '';
+    }
+
+	@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+		&::after {
+            background: url("../images/about-it/map@2x.png") no-repeat;
+            background-size: contain;
+		}
+	}
 }
 
 .it-statistic {
@@ -56,5 +77,106 @@
 
     &__item {
         max-width: 115px;
+    }
+}
+
+.offers-list__item {
+    background: url("../images/about-it/marker-rectangle.png") no-repeat 0 10px;
+    padding-left: 35px;
+}
+
+@media(min-width: 550px) {
+    .it-statistic {
+        width: 230px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 768px) {
+    .about-it {
+        padding: 55px 0;
+    }
+    
+    .block-text {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .less-block-text {
+        font-size: 10px;
+    
+        &--highlight {
+            display: block;
+            font-size: 25px;
+        }
+    }
+
+    .section-title--centred {
+        text-align: center;
+    }
+
+    .about-wrp {
+        width: 702px;
+        margin: 30px auto;
+        padding: 50px;
+        box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16),
+                    -20px 20px 0px 0px rgb(223, 226, 228);        
+    }
+
+    .about-title {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 35px 0 0 0;
+
+        &__item {
+            width: 180px;
+            min-height: 150px;
+        }
+
+        &::after {
+            width: 311px;
+            height: 193px;
+            right: 30px;
+            bottom: -100px;
+            background: url("../images/about-it/teal-map.png") no-repeat;
+            background-size: contain;       
+        }
+
+        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+            &::after {
+                background: url("../images/about-it/teal-map@2x.png") no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    .it-statistic {
+        margin: 0;
+    }
+
+    .offers-list {
+        max-width: 65%;
+        padding: 20px 7% 0;
+    }
+}
+
+@media(min-width: 960px) {
+    .about-it .br-text-mobile {
+        display: block;
+    }
+
+    .offers-list {
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 0;
     }
 }
