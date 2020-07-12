@@ -2,3 +2,58 @@
     padding: 35px 0;
 }
 
+.block-text {
+    padding: 10px 0;
+    font-family: $a-regular;
+    font-size: 14px;
+    color: #6b6f7a;
+
+    &--highlight {
+        font-family: $a-bold;
+        font-size: 30px;
+        color: #00eaff;
+    }
+}
+
+.less-block-text {
+    font-size: 10px;
+
+    &--highlight {
+        display: block;
+        font-size: 25px;
+    }
+}
+
+.about-title {
+    padding: 25px 0 0;
+    font-family: $a-extra-bold;
+    font-size: 14px;
+    letter-spacing: -.2px;
+    line-height: 1.4;
+    color: #1b202a;
+}
+
+.about-list {
+    padding: 0 18px;
+}
+
+.it-statistic {
+    margin-left: 18px;
+}
+
+.statistic-title {
+    padding: 25px 0 0;
+    font-family: $a-bold;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1b202a;   
+}
+
+.statistic-list {
+    display: flex;
+    align-items: stretch;
+
+    &__item {
+        max-width: 115px;
+    }
+}
